@@ -10,7 +10,7 @@
 % Modified by Roshan P Koshy Dated 17-June-2012
 
 \usepackage{pgfcomp-version-0-65}
-
+\usepackage{tikz}
 %%%
 %%% Inherit definitions from existing themes (DO NOT MODIFY THESE)
 %%%
@@ -27,7 +27,7 @@
 \usecolortheme{orchid}
 
 
-\definecolor{myred}{RGB}{170,22,22}
+\definecolor{myred}{RGB}{190,49,26}
 
 %%%
 %%% Tweak definitions of inner theme to match personal preferences (MODIFY THESE)
@@ -117,8 +117,7 @@
    	\begin{pgfpicture}{0mm}{0mm}{0mm}{0mm}
     	 \pgfsetlinewidth{0.28mm}
     	  \color{myred}
-      	\pgfline{\pgfpoint{-3mm}{1.0mm}}{\pgfpoint{11.2cm}{1mm}}
-   
+      	\pgfline{\pgfpoint{-3mm}{1.0mm}}{\pgfpoint{11.2cm}{1mm}}  
     \end{pgfpicture}
   }
   \ifdim\@tempdimb>0pt%
@@ -129,16 +128,13 @@
     \begin{beamercolorbox}[wd=.4\paperwidth,ht=\@tempdimb,right]{subsection in head/foot}%
       \vbox to\@tempdimb{\vfil\vfil\textbf{\footnotesize\insertshortinstitute~~}\vfil}%
     \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.1\paperwidth,ht=\@tempdimb,left]{subsection in head/foot}%
-      %\vbox to\@tempdimb{\vfil\insertlogo\vfil\vfil}%
-    \end{beamercolorbox}%
     \raisebox{-2mm}[0pt][0pt]{%
    	\begin{pgfpicture}{0mm}{0mm}{0mm}{0mm}
     	 \pgfsetlinewidth{0.28mm}
     	  \color{myred}
-      	\pgfline{\pgfpoint{-6mm}{1mm}}{\pgfpoint{10.8cm}{1mm}}
+      	\pgfline{\pgfpoint{7mm}{1mm}}{\pgfpoint{10.8cm}{1mm}}
     \end{pgfpicture}
-  }
+    }
   \fi%
 }
 
@@ -185,13 +181,11 @@
 %}
 
 
-\setbeamertemplate{sidebar canvas right}{
-	\vspace*{-0.3cm}\hspace*{-45pt}%
-		{\includegraphics[height=32pt]{nit.png}}} 
+
 
 \setbeamercolor{section in head/foot}{fg=myred}
 
-\setbeamercolor{subsection in head/foot}{parent=palette primary}
+\setbeamercolor{subsection in head/foot}{bg=}
 
 \setbeamercolor{author in head/foot}{fg=gray!60,bg=myred}
 \setbeamercolor{title in head/foot}{fg=red,bg=gray!60}
@@ -202,3 +196,7 @@
   {\hfill\insertsectionhead}
   {\hfill\color{gray!50!bg}\insertsectionhead}
 
+\setbeamertemplate{sidebar canvas right}{
+	\vspace*{-0.3cm}\hspace*{-48pt}
+	\includegraphics[height=32pt]{nit.png}%
+}
