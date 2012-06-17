@@ -77,6 +77,8 @@
   \begin{block}{The basis}
     This style uses the following default styles:
     \begin{itemize}
+      \item split
+      \item whale
       \item rounded
       \item orchid
     \end{itemize}
@@ -101,7 +103,7 @@
 \begin{frame}
   \frametitle{Analysis of the work}
 
-  This style file gives your slides some nice branding.
+  This style file gives your slides some nice Radboud branding.
   When you know how to work with the Beamer package it is easy to use.
   Just add:\\ ~~~$\backslash$usepackage$\{$ru$\}$ \\ at the top of your file.
 \end{frame}
